@@ -1,0 +1,1 @@
+Olá, esse projeto é onde irei escrever códigos ou textos para treinar uso do Git com o dream team.

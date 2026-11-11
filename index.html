@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Treino de Pull Request</title>
+<style>
+  :root {
+    --fundo: #f7f8fa;
+    --texto: #1c2430;
+    --suave: #5b6675;
+    --borda: #d5dae1;
+    --leticia: #7a3fd1;
+    --arthur: #0b7a75;
+    --mariana: #c2410c;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fundo: #14181f;
+      --texto: #e8ecf2;
+      --suave: #9aa5b5;
+      --borda: #2b3340;
+      --leticia: #b78cf5;
+      --arthur: #4fd1c5;
+      --mariana: #fb9a63;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+    background: var(--fundo);
+    color: var(--texto);
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 60px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  p.intro { color: var(--suave); margin: 0 0 32px; max-width: 60ch; }
+  .perfil {
+    border: 1px solid var(--borda);
+    border-left: 6px solid var(--cor);
+    border-radius: 6px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+  }
+  .perfil h2 { margin: 0 0 4px; font-size: 1.25rem; color: var(--cor); }
+  .perfil p { margin: 4px 0; }
+  .perfil .papel { color: var(--suave); font-size: 0.95rem; }
+  #leticia { --cor: var(--leticia); }
+  #arthur  { --cor: var(--arthur); }
+  #mariana { --cor: var(--mariana); }
+  footer { margin-top: 32px; color: var(--suave); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>Treino de Pull Request</h1>
+  <p class="intro">
+    Cada pessoa edita apenas o próprio cartão abaixo: faz um fork, altera o texto,
+    envia a branch e abre um Pull Request.
+  </p>
+
+  <!--
+    ============================================================
+    PASSO A PASSO (resumo)
+    1. Faça o fork do repositório no GitHub (botão "Fork").
+    2. Clone o SEU fork:  git clone https://github.com/SEU-USUARIO/NOME-DO-REPO.git
+    3. Crie uma branch:   git checkout -b nome-sua-alteracao
+    4. Edite SOMENTE o seu cartão neste arquivo.
+    5. Salve e rode:      git add index.html
+                          git commit -m "Atualiza cartão de SEU NOME"
+                          git push origin nome-sua-alteracao
+    6. No GitHub, clique em "Compare & pull request" e depois em "Create pull request".
+    ============================================================
+  -->
+
+
+  <!-- ===================== CARTÃO DA LETÍCIA ===================== -->
+  <!-- Letícia: altere somente o texto entre os comentários -->
+  <section class="perfil" id="leticia">
+    <h2>Letícia</h2>
+    <p class="papel">Função: (escreva aqui)</p>
+    <p>Mensagem: <!--DIGITE AQUI SUA MENSAGEM--></p>
+  </section>
+  <!-- ================== FIM DO CARTÃO DA LETÍCIA ================== -->
+
+
+  <!-- ===================== CARTÃO DO ARTHUR ===================== -->
+  <!-- Arthur: altere somente o texto entre os comentários -->
+  <section class="perfil" id="arthur">
+    <h2>Arthur</h2>
+    <p class="papel">Função: (escreva aqui)</p>
+    <p>Mensagem: <!--DIGITE AQUI SUA MENSAGEM--> </p>
+  </section>
+  <!-- ================== FIM DO CARTÃO DO ARTHUR ================== -->
+
+
+  <!-- ===================== CARTÃO DA MARIANA ===================== -->
+  <!-- Mariana: altere somente o texto entre os comentários -->
+  <section class="perfil" id="mariana">
+    <h2>Mariana</h2>
+    <p class="papel">Função: (escreva aqui)</p>
+    <p>Mensagem: <!--DIGITE AQUI SUA MENSAGEM--></p>
+  </section>
+  <!-- ================== FIM DO CARTÃO DA MARIANA ================== -->
+
+
+  <footer>
+    Dica: se cada pessoa mexer só no próprio cartão, os Pull Requests não geram conflitos.
+  </footer>
+
+</main>
+</body>
+</html>
